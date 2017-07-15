@@ -2,7 +2,7 @@
 <head>
 	<title> REYES COMPANY </title>
 	<style>
-		div {
+		.splash {
 			background: url(splash.jpg);
 			background-size: cover;
 			background-position: center;
@@ -13,9 +13,29 @@
 		body {
 			margin: 0;
 		}
+		.labels {
+			display: flex;
+			justify-content: space-between;
+			color: black;
+			background-color: #af3939;
+			padding: 10px;
+			font-family: Avenir;
+		}
+		.highlight:hover {
+			color: white;
+		}
 	</style>
 </head>
 <body>
-	<div> HELLO </div>
+	<div class="splash">
+		<div class="labels">
+			<div class="highlight">About</div>
+			<div class="highlight">Works</div>
+			<div class="highlight">Press</div>
+			<div class="highlight">Calendar</div>
+			<div class="highlight">Donante</div>
+			<div class="highlight">Contact </div>
+		</div>
+	</div>
 </body>
 </html>
