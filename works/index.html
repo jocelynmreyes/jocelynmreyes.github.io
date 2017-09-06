@@ -1,12 +1,30 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Works | REYES</title>
 <link rel="stylesheet" type="text/css" href="../content.css">
+
+<link rel="stylesheet" type="text/css" href="../slick/slick.css"/>
+<link rel="stylesheet" type="text/css" href="../slick/slick-theme.css"/>
+				
 <style type="text/css">
 	body {
 	    background: #514145;
 	}
-	h1, h2, .current {
+	h1, h2, .current, b {
 		color: rgb(245, 153, 152);
+	}
+	.photos img {
+		max-width: 100%;
+		max-height: 100%;
+	}
+	.slick-slide {
+		height: auto !important;
+	}
+	.credit {
+		opacity: .5;
+	    font-size: 80%;
+	}
+	.info {
+		opacity: .8;
 	}
 </style>
 
@@ -28,47 +46,50 @@
 
 <div class="work">
 
-<h1>Bits (2017)</h1>
+	<h1>Bits (2017)</h1>
 
-Photograph
+	<div class='photos'>
+		<img src="../splash.jpg">
+		<img src="../photos/bits1.jpg">
+	</div>
 
-The one of us all in a clump holding on to each other. Maybe post two photos
+	<div class="credit">Photo credit: Guido Budani</div>
 
+	<p>Bits is a quirky, humorous modern dance piece which examines interactions between the individual and the group using a fragmented movement language. </p>
 
-Choreography: Jocelyn Reyes
-
-Performers: Allyson Adams, Caileigh Knapp, Claudia Mayoss, Michelle Olson, Jocelyn Reyes
-
-Music: Bits of ... Old Legend by Crausaz, William Tell Overture by Rossini, Can-Can by Offenbach, The Well Tempered Clavier (C Minor Prelude) by Bach
-
-Photo: Guido Budani
-
-Presented: UCLA, Glorya Kaufman Theater 
-
-About: Bits is a quirky, humorous modern dance piece which examines interactions between the individual and the group using a fragmented movement language. 
-
+	<div class="info">
+		<p><b>Choreography</b>: Jocelyn Reyes</p>
+		<p><b>Performers</b>: Allyson Adams, Caileigh Knapp, Claudia Mayoss, Michelle Olson, Jocelyn Reyes</p>
+		<p><b>Music</b>: Bits of ... Old Legend by Crausaz, William Tell Overture by Rossini, Can-Can by Offenbach, The Well Tempered Clavier (C Minor Prelude) by Bach</p>
+		<p><b>Presented</b>: UCLA, Glorya Kaufman Theater </p>
+	</div>	
 
 </div>
-<div class="work">
 
+
+<div class="work">
 
 <h1>Medium Rare (2017)</h1>
 
-Photograph
-Post three photos
+	<div class='photos'>
+		<img src="../photos/something.jpg">
+		<img src="..">
+		<img src="..">
+		<img src="..">
+		<img src="..">
+		<img src="..">
+	</div>
 
-Choreography: Jocelyn Reyes
+	<div class="credit">Photo credit: Charlie Chang</div>
 
-Performers: Jessie Grimes, Michelle Olson, Jocelyn Reyes, Amanda Sun
+	<p>Can instability open up new possibilities for ways of being? </p>
 
-Music: Collage of Syyllinen Syli (Varttina Iki), Ancha es Castilla Sound Score (EVOL), La Vaca (Mala Fe), El Gato Volador (El Chombo), and Todos Me Miran (Gloria Trevi), by Jocelyn Reyes 
-
-Photo: Charlie Chang
-
-Presented: UCLA Glorya Kaufman Theater, Atwater Village Theater
-
-About: Can instability open up new possibilities for ways of being?
-
+	<div class="info">
+		<p><b>Choreography</b>: Jocelyn Reyes</p>
+		<p><b>Performers</b>: Jessie Grimes, Michelle Olson, Jocelyn Reyes, Amanda Sun</p>
+		<p><b>Music</b>: Collage of Syyllinen Syli (Varttina Iki), Ancha es Castilla Sound Score (EVOL), La Vaca (Mala Fe), El Gato Volador (El Chombo), and Todos Me Miran (Gloria Trevi), by Jocelyn Reyes </p>
+		<p><b>Presented</b>: UCLA, Glorya Kaufman Theater, Atwater Village Theater </p>
+	</div>	
 
 </div>
 <div class="work">
@@ -146,3 +167,12 @@ About: 2 + a is a piece focused on the communication of art across disciplines. 
 <div class="footer">
 	Copyright 2017 REYES. <!-- ©  -->
 </div>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="../slick/slick.min.js"></script>
+<script type="text/javascript">
+  	$('.photos').slick({
+    	// setting-name: setting-value
+  	});
+</script>
