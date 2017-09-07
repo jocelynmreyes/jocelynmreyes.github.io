@@ -3,35 +3,107 @@
 <link rel="stylesheet" type="text/css" href="../content.css">
 <style type="text/css">
 	body {
-	    background: #544a55;
+	    background: #544a55 ;
 	}
 	h1, h2, .current {
 		color: rgb(227, 187, 255);
 	}
+	img {
+		max-width: 100%;
+	}
+	.support {
+	    background: #714dd8 url(../PayPal.svg) no-repeat;
+	    padding: 10px 20px;
+	    color: #f3f3f3;
+	    border-radius: 3px;
+	    display: inline-block;
+	    background-size: 22px;
+	    background-position: 10px center;
+	    padding-left: 43px;
+	    cursor: pointer;
+	    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.31);
+	  	transition: .2s;
+	}
+	.support:hover {
+		transform: translate(0,-1px);
+	    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.31);
+	}
+	.support-wrap {
+		text-align: center;
+	}
+	.submit {
+		display: none;
+	}
+/*	.bg {
+	    background: #151517 url(../photos/Wacsmash-390.jpg) no-repeat;		
+	    background-position: center top;
+	    background-size: 50vw;
+	    position: relative;
+	    flex: 1;
+	}
+	.bg::before {
+		content: " ";
+		background: linear-gradient(#544a55, rgba(84, 74, 85, 0));
+		position: absolute;
+		width: 100%;
+		height: 100%;
+	}
+	.content {
+		flex: 0;
+	}
+	.footer {
+		position: absolute;
+		bottom: 0;
+		width: 100%;
+		box-sizing: border-box;
+	}*/
+
 </style>
-
 <div class="header">
-<div class="header-title"><a href="/">REYES</a></div>
-<!-- 	<div>About</div>
- -->
-<div class="labels">
-	<a class="highlight" href="/about">About</a>
-	<a class="highlight" href="/works">Works</a>
-	<a class="highlight" href="/calendar">Calendar</a>
-	<a class="highlight current" href="/donate">Donate</a>
-	<a class="highlight" href="/contact">Contact </a>
-</div>
+	<div class="header-title"><a href="/">REYES</a></div>
+	<!-- 	<div>About</div>
+	 -->
+	<div class="labels">
+		<a class="highlight" href="/about">About</a>
+		<a class="highlight" href="/works">Works</a>
+		<a class="highlight" href="/calendar">Calendar</a>
+		<a class="highlight current" href="/donate">Donate</a>
+		<a class="highlight" href="/contact">Contact </a>
+	</div>
 
 </div>
-<div class="content">
+<div class="content"	>
 
-<h1>Donate</h1>
+	<h1>Donate</h1>
 
-<p>Jocelyn Reyes' work is made possible by the support and contributions of the community.</p>
+	<p>Jocelyn Reyes' work is made possible by the support and contributions of the community.</p>
 
-<p>Thank you for your donation! </p>
+	<p>Thank you for your donation! </p>
 
 
+
+	<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+	<input type="hidden" name="cmd" value="_s-xclick">
+	<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+	">
+	<p class='support-wrap'>
+
+	<label>
+		<span class="support">Support REYES</span>
+		<input class="submit" type="submit" border="0" name="submit">
+	</label>
+	</p>
+
+	<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+	</form>
+	
+
+
+
+
+
+	<img src="../photos/Wacsmash-390.jpg">
+<!-- <img src=""> -->
 
 <!-- *Set up a PayPal link that people can send money to.  -->
 
