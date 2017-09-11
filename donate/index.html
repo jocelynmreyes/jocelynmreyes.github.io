@@ -3,7 +3,18 @@
 <link rel="stylesheet" type="text/css" href="../content.css">
 <style type="text/css">
 	body {
-	    background: #544a55 ;
+	    background: #543957; /*#3a273c; /*#544a55;*/
+	}
+	body::before {
+		content: " ";
+		background: url(../photos/Wacsmash-390.jpg);
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background-position: center;
+		background-size: cover;
+		z-index: -1;
+		opacity: .1;
 	}
 	h1, h2, .current {
 		color: rgb(227, 187, 255);
@@ -34,30 +45,6 @@
 	.submit {
 		display: none;
 	}
-/*	.bg {
-	    background: #151517 url(../photos/Wacsmash-390.jpg) no-repeat;		
-	    background-position: center top;
-	    background-size: 50vw;
-	    position: relative;
-	    flex: 1;
-	}
-	.bg::before {
-		content: " ";
-		background: linear-gradient(#544a55, rgba(84, 74, 85, 0));
-		position: absolute;
-		width: 100%;
-		height: 100%;
-	}
-	.content {
-		flex: 0;
-	}
-	.footer {
-		position: absolute;
-		bottom: 0;
-		width: 100%;
-		box-sizing: border-box;
-	}*/
-
 </style>
 <div class="header">
 	<div class="header-title"><a href="/">REYES</a></div>
@@ -102,7 +89,7 @@
 
 
 
-	<img src="../photos/Wacsmash-390.jpg">
+	<!-- <img src="../photos/Wacsmash-390.jpg"> -->
 <!-- <img src=""> -->
 
 <!-- *Set up a PayPal link that people can send money to.  -->
