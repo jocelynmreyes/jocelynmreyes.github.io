@@ -45,17 +45,17 @@
 	.info {
 		opacity: .8;
 	}
+	.slick-next {
+		right: 2px;
+	}
+	.slick-prev {
+		left: 2px;
+		z-index: 2;
+	}
 	@media(max-width: 740px) {
 		.photos img {
 			opacity: 1;
 			margin: 0;
-		}
-		.slick-next {
-			right: 2px;
-		}
-		.slick-prev {
-			left: 2px;
-			z-index: 2;
 		}
 	}
 
@@ -70,7 +70,7 @@
 	<a class="highlight current" href="/works">Works</a>
 	<a class="highlight" href="/calendar">Calendar</a>
 	<a class="highlight" href="/donate">Donate</a>
-	<a class="highlight" href="/contact">Contact </a>
+	<a class="highlight" href="/contact">Contact</a>
 </div>
 
 </div>
@@ -235,14 +235,7 @@
 	    	centerMode: true,
 			variableWidth: true,
 		  	focusOnSelect: true,
-		  	arrows: false,
-		  	responsive: [ {
-		      	breakpoint: 740,
-		     	settings: {
-		    		centerMode: false,
-			     	arrows: true
-		      	}
-	      	}]
+		  	// arrows: false,
 	  	});		
 	})
 </script>
