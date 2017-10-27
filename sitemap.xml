@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+   <url>
+
+      <loc>http://www.reyesdance.com/</loc>
+
+   </url>
+
+   <url>
+
+      <loc>http://www.reyesdance.com/calendar</loc>
+
+      <changefreq>weekly</changefreq>
+
+   </url>
+
+   <url>
+
+      <loc>http://www.reyesdance.com/works</loc>
+      <changefreq>monthly</changefreq>
+
+   </url>
+
+   <url>
+
+      <loc>http://www.reyesdance.com/about</loc>
+      <changefreq>monthly</changefreq>
+
+   </url>
+
+
+   <url>
+
+      <loc>http://www.reyesdance.com/donate</loc>
+
+   </url>
+
+   <url>
+
+      <loc>http://www.reyesdance.com/contact</loc>
+
+   </url>
+
+
+</urlset>
