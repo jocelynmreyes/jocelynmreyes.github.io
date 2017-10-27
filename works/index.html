@@ -81,7 +81,7 @@
 </div>
 
 <div class='photos'>
-	<img src="../splash.jpg">
+	<img class='first' src="../splash.jpg">
 	<img src="../photos/bits1.jpg">
 </div>
 
@@ -110,7 +110,7 @@
 
 </div>
 <div class='photos'>
-	<img src="../photos/MediumRare-1-revised.jpg">
+	<img class='first' src="../photos/MediumRare-1-revised.jpg">
 	<img src="../photos/MediumRare 2.jpg">
 	<img src="../photos/MediumRare 3.jpg">
 	<img src="../photos/MediumRare 4.jpg">
@@ -138,7 +138,7 @@
 </div>
 
 <div class='photos'>
-	<img src="../photos/Being Bee 1.JPG">
+	<img class='first' src="../photos/Being Bee 1.JPG">
 	<img src="../photos/Being Bee 2.JPG">
 	<img src="../photos/Being Bee 3.JPG">
 	<img src="../photos/Being Bee 4.JPG">
@@ -167,7 +167,7 @@
 </div>
 
 <div class='photos'>
-	<img src="../photos/InSelf 1_0174.jpg">
+	<img class='first' src="../photos/InSelf 1_0174.jpg">
 	<img src="../photos/InSelf 2_JamiShapiro_050.jpg">
 	<img src="../photos/InSelf 3_JamiShapiro_078.jpg">
 	<img src="../photos/InSelf-4_JamiShapiro_070_revised.jpg">	
@@ -195,7 +195,7 @@
 </div>
 
 	<div class='photos'>
-		<img src="../photos/2+a.png">		
+		<img class='first' src="../photos/2+a.png">		
 	</div>
 
 <div class="content">
@@ -228,14 +228,16 @@
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="../slick/slick.min.js"></script>
 <script type="text/javascript">
-	$(document).ready(function(){
-	  	$('.photos').slick({
-	    	// setting-name: setting-value
+	function slick(el){
+		$(el).slick({
 	    	adaptiveHeight: true,
 	    	centerMode: true,
 			variableWidth: true,
 		  	focusOnSelect: true,
-		  	// arrows: false,
-	  	});		
+	  	})
+	}
+	;[].slice.call(document.querySelectorAll('.first')).forEach(function(img){
+		if(img.complete) slick(img.parentElement)
+		else img.onload = slick.bind(null, img.parentElement)
 	})
 </script>
