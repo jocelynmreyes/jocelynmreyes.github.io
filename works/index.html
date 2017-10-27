@@ -48,11 +48,21 @@
 	.slick-next {
 		right: 2px;
 	}
+	.slick-prev, .slick-next {
+		width: auto;
+		height: auto;
+	}
+	.slick-prev:before, .slick-next:before{
+		font-size: 40px;
+	}
 	.slick-prev {
 		left: 2px;
 		z-index: 2;
 	}
 	@media(max-width: 740px) {
+		.slick-prev:before, .slick-next:before{
+			font-size: 30px;
+		}
 		.photos img {
 			opacity: 1;
 			margin: 0;
