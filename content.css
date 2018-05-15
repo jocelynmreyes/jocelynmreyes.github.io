@@ -41,6 +41,45 @@ body {
     padding: 0 2vw;
     text-decoration: none;
 }
+.signup{
+	padding: 40px;
+	padding-top: 30px;
+	background: rgb(34, 122, 218);
+	border-radius: 3px;
+	margin-top: 60px;
+	color: #d8e2ff;
+}
+.signup b {
+	color: #fff;
+}
+.signup .button {
+	padding: 10px 20px;
+	border: 0;
+	background: #00218a;
+	border-radius: 3px;
+	color: #fff;
+	cursor: pointer;
+}
+.signup h1 {
+	margin: 0;
+	margin-bottom: 10px;
+	color: #fff;
+}
+.signup input {
+	font: inherit;
+	font-size: 120%;
+}
+.signup form {
+	margin: 0;
+}
+.signup .email {
+	padding: 10px;
+	border: 0;
+	border-radius: 3px;
+	margin-top: 20px;
+	width: 300px;
+	max-width: 100%;
+}
 .footer {
     padding: 3vw;
     background: rgba(0, 0, 0, 0.17);
@@ -70,5 +109,16 @@ body {
 	.labels {
 		margin: -2px;
 		font-size: 90%;
+	}
+	.signup {
+		padding: 20px;
+	}
+	.signup .email {
+		width: 100%;
+	}
+	.signup .button {
+		display: block;
+		width: 100%;
+		margin-top: 20px;
 	}
 }
