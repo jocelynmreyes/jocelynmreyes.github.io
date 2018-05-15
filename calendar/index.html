@@ -38,16 +38,40 @@
 	    color: #82cbde;
 	    text-decoration: none;
 	}
-	h2 {
-		position: relative;
+	.past {
+		margin-top: 80px;
 	}
-	h2 img {
+	h2 > img {
 	    height: 2em;
 	    vertical-align: middle;
 	    margin-right: 10px;
 	    position: absolute;
 	    right: 100%;
 	    top: -5px;
+	}
+	h2 {
+		position: relative;
+	}
+	.venue {
+		top: 0;
+	    margin-right: 10px;
+	    position: absolute;
+	    right: 100%;
+	    font-weight: normal;
+	    font-size: 80%;
+	    background: #162521;
+	    border-radius: 3px;
+	    padding: 10px;
+	    padding-top: 0px;
+	}
+	.venue .date {
+	    white-space: pre;		
+	}
+	.venue img {
+	    max-height: 2em;
+	    max-width: 100%;
+	    display: block;
+	    margin: auto;
 	}
 	.tickets {
 	    color: #4030b7;
@@ -61,17 +85,37 @@
 	    border-top: 1px solid rgba(255, 255, 255, 0.44);
 	    transition: .2s;
 	    margin-bottom: 40px;
+	    font-weight: bold;
+	    font-size: 120%;
 	}
 	.tickets:hover {
 		transform: translate(0,-1px);
 	    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.31);
 	}
-	@media(max-width: 1000px) {
-		h2 img {
+	@media(max-width: 1100px) {
+		.venue {
 			display: block;
 			position: relative;
 			right: auto;
 			margin-bottom: 10px;
+			background: none;
+			padding: 0;
+		}
+		.venue img {
+			margin: 0;
+			border-radius: 3px;
+		}
+		.venue .date {
+			display: none;
+		}
+		h2 > img {
+			border-radius: 3px;
+			display: block;
+			position: relative;
+			right: auto;
+			margin-bottom: 10px;
+			background: none;
+			padding: 0;
 		}
 	}
 </style>
@@ -94,23 +138,104 @@
 <h1>UPCOMING EVENTS</h1>
 
 
-<h2><img src="http://www.safehousearts.info/yahoo_site_admin/assets/images/SAFE-extinct.178151254_logo.jpg">RAW presents Steamroller/Zulfikar Ali Bhutto/Jocelyn Reyes </h2>
+<h2>
+	RAW presents Heidi Carlsen and Jocelyn Reyes
+	<div class='venue'>
+		<div class="date"><b>May 18</b> & <b>19</b></div>
+		<img src="http://www.safehousearts.info/yahoo_site_admin/assets/images/SAFE-extinct.178151254_logo.jpg">
+	</div>
+</h2>
+
+<p><b>8pm May 18, 2018</b> and <b>9pm May 19, 2018</b> at <b>Safehouse Arts</b></p>
+
+<p>Jocelyn Reyes presents 'Coming to Terms' for the RAW Spring edition.</p>
+<p>'Coming to Terms' examines the shifting relationship between two people coming from unstable environments. This dance is about coming to terms with the past to understand the present. </p>
+
+<p><a  class="tickets" href="https://tickets.vendini.com/ticket-software.html?t=tix&e=26a38b3663d37138118bc4c8a879579b&vqitq=e15268f9-eda5-4151-ba80-f15167eeeb81&vqitp=2689c139-979c-411f-8992-cb954a9c458c&vqitts=1519371069&vqitc=vendini&vqite=itl&vqitrt=Safetynet&vqith=2f66979692c54d70e615d4872274831e">&#x1F39F; Buy Tickets on Vendini</a></p>
+
+
+
+<h2>
+	PUSHFest 2018
+	<div class='venue'>
+		<div class="date"><b>September 29</b> & <b>30</b></div>
+		<img src="./push.gif">
+	</div>
+</h2>
+
+<p><b>8pm September 29, 2018</b> and <b>7:30pm September 30, 2018</b> at <b>ODC</b></p>
+
+<p>Jocelyn Reyes presents 'Medium Rare'.</p>
+
+
+<p><a href=".">&#x1F39F; Tickets on Sale July 1st</a></p>
+
+
+
+<h2>
+	RAW presents Jocelyn Reyes
+	<div class='venue'>
+		<div class="date"><b>Oct 19</b> & <b>20</b></div>
+		<img src="http://www.safehousearts.info/yahoo_site_admin/assets/images/SAFE-extinct.178151254_logo.jpg">
+	</div>
+</h2>
+
+<p><b>8pm October 19, 2018</b> and <b>8pm October 20, 2018</b> at <b>Safehouse Arts</b></p>
+
+<p>Jocelyn Reyes presents as yet Untitled Work for the RAW Fall edition.</p>
+
+<p><a href=".">&#x1F39F; Tickets TBA</a></p>
+
+
+
+
+
+
+<h1 class="past">PAST EVENTS</h1>
+<h2> Mark Foehringer's Young Choreographers Forum SF</h2>
+
+<p><b>6pm March 18, 2018</b> at <b>Joe Goode Annex</b></p>
+
+<p>Jocelyn Reyes presents 'Tres' as part of the Mark Foehringer's Young Choreographers Forum SF.</p>
+<p> 'Tres' is a series of three female duets exploring different textures of a single self.</p>
+
+
+<h2>RAW presents Steamroller/Zulfikar Ali Bhutto/Jocelyn Reyes <img src="http://www.safehousearts.info/yahoo_site_admin/assets/images/SAFE-extinct.178151254_logo.jpg"></h2>
 
 <p><b>8pm January 11, 2018</b> and <b>8pm January 12, 2018</b> at <b>Safehouse Arts</b></p>
 
 <p>Jocelyn Reyes presents 'Bits' for the RAW winter edition.</p>
 <p>Bits is a quirky, humorous modern dance piece which examines interactions between the individual and the group using a fragmented movement language.</p>
 
-<p><a  class="tickets" href="https://tickets.vendini.com/ticket-software.html?t=tix&e=8e73e02e5b740128ea163dc661565395">&#x1F39F; Tickets on Vendini</a></p>
+
+
+<h2> REYES @ UPSTREAM 3 </h2>
+
+<p><b>7:30pm December 7, 2017</b> at <b>The Sardine</b></p>
+
+<p>Jocelyn Reyes presents a solo work.</p>
+
+<p>UPSTREAM is a micro-residency program designed to give up-and-coming artists a platform for experimentation in a tiny space. 
 
 
 
+<h2>REYES @ Mbongui Square Festival<img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F34741692%2F72280026081%2F1%2Foriginal.jpg?w=800&rect=0%2C367%2C932%2C466&s=d058ef98964b3480ef78b671e2705189"></h2>
+
+<p> <b>7pm November 11, 2017</b> and <b>7pm November 12, 2017</b> at <b>Zaccho Studio</b></p>
+
+<p>Jocelyn Reyes presents 'Bits' at MSF. </p>
+
+<p>Mbongui Square Festival is an annual festival that celebrates the performing and visual arts. Organized by Kiandanda Dance Theater, the festival gathers dance, music, visual arts and spoken word artists of varied style and artistic choices, from the Bay Area and across the world. </p>
 
 
 
+<h2>REYES @ Fall LEVYsalon<img src="https://static1.squarespace.com/static/5988bbffbebafbccad45179f/t/59b2252746c3c498ebf433c3/1507159554843/?format=1500w"></h2>
 
+<p><b>8:30pm November 4, 2017</b> at <b>LEVYstudio</b></p>
 
-<h1>PAST EVENTS</h1>
+<p>Jocelyn Reyes presents 'Coming To Terms'</p>
+
+<p>LEVYsalon is a micro-residency program designed to give up-and-coming artists of all disciplines a platform for expression and experimentation. The program concludes with an evening showcase, and each artist/ensemble presents five minutes of their work in progress.</p>
 
 
 <h2>Room 204</h2>
@@ -122,26 +247,10 @@
 <p><a href="https://www.facebook.com/events/1505384666193810/?acontext=%7B%22source%22%3A5%2C%22page_id_source%22%3A1495790180700649%2C%22action_history%22%3A[%7B%22surface%22%3A%22page%22%2C%22mechanism%22%3A%22main_list%22%2C%22extra_data%22%3A%22%7B%5C%22page_id%5C%22%3A1495790180700649%2C%5C%22tour_id%5C%22%3Anull%7D%22%7D]%2C%22has_source%22%3Atrue%7D">Facebook Event</a></p>
 
 
-<h2><img src="https://static1.squarespace.com/static/5988bbffbebafbccad45179f/t/59b2252746c3c498ebf433c3/1507159554843/?format=1500w">REYES @ Fall LEVYsalon</h2>
-
-<p><b>8:30pm November 4, 2017</b> at <b>LEVYstudio</b></p>
-
-<p>Jocelyn Reyes presents 'Coming To Terms'</p>
-
-<p>LEVYsalon is a micro-residency program designed to give up-and-coming artists of all disciplines a platform for expression and experimentation. The program concludes with an evening showcase, and each artist/ensemble presents five minutes of their work in progress.</p>
-<p> <a class="tickets"  href="https://www.eventbrite.com/e/levysalon-a-quarterly-performance-showcase-tickets-38122842448?aff=es2">&#x1F39F; Tickets On Eventbrite</a></p>
 
 
 
-<h2><img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F34741692%2F72280026081%2F1%2Foriginal.jpg?w=800&rect=0%2C367%2C932%2C466&s=d058ef98964b3480ef78b671e2705189">REYES @ Mbongui Square Festival</h2>
 
-<p> <b>7pm November 11, 2017</b> and <b>7pm November 12, 2017</b> at <b>Zaccho Studio</b></p>
-
-<p>Jocelyn Reyes presents 'Bits' at MSF. </p>
-
-<p>Mbongui Square Festival is an annual festival that celebrates the performing and visual arts. Organized by Kiandanda Dance Theater, the festival gathers dance, music, visual arts and spoken word artists of varied style and artistic choices, from the Bay Area and across the world. </p>
-
-<p> <a class="tickets"  href="https://www.eventbrite.com/e/mbongui-square-festival-tickets-37430269945">&#x1F39F; Tickets on EventBrite</a></p>
 
 
 
