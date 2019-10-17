@@ -34,13 +34,22 @@ body {
     align-items: baseline;
     justify-content: space-between;
 }
-.header-title a{
+.header-title svg {
+	width: 30vw;
+    padding: 2vw;
+    padding-bottom: 0;
+}
+.header-title svg path{
+    fill: #fff;
+}
+/*.header-title a{
     color: #fff;
     font-weight: bold;
     font-size: 10vw;
     padding: 0 2vw;
     text-decoration: none;
 }
+*/
 .signup{
 	padding: 40px;
 	padding-top: 30px;
@@ -95,13 +104,19 @@ body {
 	.content {
 		padding-top: 0;
 	}
-	.header-title {
+/*	.header-title {
 		text-align: center;
 	}
 	.header-title a {
 		padding: 0;
-		// font-size: 28vw;
+		font-size: 28vw;
 		font-size: 88px;
+	}
+*/
+	.header-title svg {
+		width: 100%;
+		padding: 0;
+		margin-bottom: 20px;
 	}
 	.highlight {
 		padding: 2px;
