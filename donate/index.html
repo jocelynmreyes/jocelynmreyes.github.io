@@ -11,10 +11,15 @@
   gtag('config', 'UA-108790729-1');
 </script>
 <style type="text/css">
-	body {
-	    background: #543957; /*#3a273c; /*#544a55;*/
+	.header-title svg path {
+	    fill: #543957; /*#3a273c; /*#544a55;*/
 	}
-	body::before {
+	body {
+		display: flex;
+		flex-direction: column;
+		min-height: 100%;
+	}
+/*	body::before {
 		content: " ";
 		background: url(../photos/Wacsmash-390.jpg);
 		position: absolute;
@@ -24,7 +29,7 @@
 		background-size: cover;
 		z-index: -1;
 		opacity: .1;
-	}
+	}*/
 	h1, h2, .current {
 		color: rgb(227, 187, 255);
 	}
@@ -33,16 +38,18 @@
 	}
 	.support {
 	    background: #714dd8;
-	    padding: 10px 20px;
+	    padding: 20px 40px;
 	    color: #f3f3f3;
 	    border-radius: 3px;
 	    display: inline-block;
 	    background-size: 22px;
 	    background-position: 10px center;
-	    padding-left: 43px;
+	    /*padding-left: 43px;*/
 	    cursor: pointer;
 	    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.31);
 	  	transition: .2s;
+	  	margin-top: 40px;
+	  	font-size: 200%;
 	}
 	.support:hover {
 		transform: translate(0,-1px);
@@ -91,7 +98,7 @@
 	<p class='support-wrap'>
 
 	<A href = "https://www.flipcause.com/secure/cause_pdetails/NDg5MTE=">
-		<span class="support">Support REYES</span>
+		<span class="support">Support REYES &rarr;</span>
 		<input class="submit" type="submit" border="0" name="submit">
 	</A>
 	</p>
@@ -111,3 +118,4 @@
 <div class="footer">
 	Copyright 2020 REYES Dance. <!-- ©  -->
 </div>
+<script type="text/javascript" src="/colors.js"></script>

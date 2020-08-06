@@ -17,10 +17,10 @@
   gtag('config', 'UA-108790729-1');
 </script>
 <style type="text/css">
-	body {
-	    background: #585a5a;
+	.header-title svg path {
+	    fill: #585a5a;
 	}
-	body::before {
+/*	body::before {
 		content: " ";
 		background: url(../events.jpg);
 		position: fixed;
@@ -31,7 +31,7 @@
 		z-index: -1;
 		opacity: .1;
 	}
-
+*/
 	.signup {
 		background: rgb(44, 175, 92);
 		color: #d1fbcd;
@@ -41,14 +41,11 @@
 	}
 
 	h1, h2, .current, b {
-		color: rgb(194, 252, 212);
+		color: #97ccbe;
 	}
 	a {
 	    color: #82cbde;
 	    text-decoration: none;
-	}
-	.past {
-		margin-top: 80px;
 	}
 	h2 > img {
 	    height: 2em;
@@ -63,15 +60,16 @@
 	}
 	.venue {
 		top: 0;
-	    margin-right: 10px;
+	    margin-right: 20px;
 	    position: absolute;
 	    right: 100%;
 	    font-weight: normal;
 	    font-size: 80%;
-	    background: #162521;
+	    /*background: #162521;*/
 	    border-radius: 3px;
-	    padding: 10px;
-	    padding-top: 0px;
+	    padding: 0 10px;
+	    border: 2px solid;
+	    /*padding-top: 0px;*/
 	}
 	.venue .date {
 	    white-space: pre;		
@@ -100,6 +98,12 @@
 	.tickets:hover {
 		transform: translate(0,-1px);
 	    box-shadow: 0 2px 14px rgba(0, 0, 0, 0.31);
+	}
+	.past {
+		background: rgba(115, 204, 180, .11);
+	}
+	.past h1 {
+		margin-top: 80px;
 	}
 	@media(max-width: 1100px) {
 		.venue {
@@ -156,7 +160,7 @@
 <h2>
 	Box World/Film
 	<div class='venue'>
-		<div class="date"><b>August 14 </b> </div>
+		<div class="date"><b>August 14</b> </div>
 	</div>
 </h2>
 
@@ -188,169 +192,173 @@
         </div>
     </form>
 </div>   
+</div>
 
 
 
 
+<div class='past'>
+	<div class='content'>
+	<h1>PAST EVENTS</h1>
 
-<h1 class="past">PAST EVENTS</h1>
 
+	<h2>
+		ODC Pilot 72
+		<div class='venue'>
+			<div class="date"><b>December 7</b> & <b>8</b> </div>
+		</div>
+	</h2>
 
-<h2>
-	ODC Pilot 72
-	<div class='venue'>
-		<div class="date"><b>December 7</b> & <b>8</b> </div>
-	</div>
-</h2>
+	<p><b>8pm December 7th, 4pm and 7pm December 8th, 2019</b> at <b>ODC, Dance Commons</b></p>
 
-<p><b>8pm December 7th, 4pm and 7pm December 8th, 2019</b> at <b>ODC, Dance Commons</b></p>
+	<p>Jocelyn Reyes presents 'LASOS' as part of ODC Pilot 72: 'Hatched'. </p>
 
-<p>Jocelyn Reyes presents 'LASOS' as part of ODC Pilot 72: 'Hatched'. </p>
 
+	<h2>
+		Festival of Latin American Contemporary Choreographers
+		<div class='venue'>
+			<div class="date"><b>November 22</b> </div>
+		</div>
+	</h2>
 
-<h2>
-	Festival of Latin American Contemporary Choreographers
-	<div class='venue'>
-		<div class="date"><b>November 22</b> </div>
-	</div>
-</h2>
+	<p><b>4pm November 22nd, 2019</b> at <b>BAMPFA</b></p>
 
-<p><b>4pm November 22nd, 2019</b> at <b>BAMPFA</b></p>
+	<p>Jocelyn Reyes presents 'Bits' as part of the Festival of Latin American Contemporary Choreographers. </p>
 
-<p>Jocelyn Reyes presents 'Bits' as part of the Festival of Latin American Contemporary Choreographers. </p>
 
+	<h2>
+		MAGOS
+		<div class='venue'>
+			<div class="date"><b>May 24</b> & <b>25</b> </div>
+		</div>
+	</h2>
 
-<h2>
-	MAGOS
-	<div class='venue'>
-		<div class="date"><b>May 24</b> & <b>25</b> </div>
-	</div>
-</h2>
+	<p><b>8pm May 24th and 25th, 2019</b> at <b>Joe Goode Annex</b></p>
 
-<p><b>8pm May 24th and 25th, 2019</b> at <b>Joe Goode Annex</b></p>
+	<p>Jocelyn Reyes presents 'MAGOS', a full evening length work at Joe Goode Annex. </p>
 
-<p>Jocelyn Reyes presents 'MAGOS', a full evening length work at Joe Goode Annex. </p>
 
+	<h2>
+		West Wave Dance Festival Program 3
+		<div class='venue'>
+			<div class="date"><b>April 8</b> </div>
+			
+		</div>
+	</h2>
 
-<h2>
-	West Wave Dance Festival Program 3
-	<div class='venue'>
-		<div class="date"><b>April 8</b> </div>
-		
-	</div>
-</h2>
+	<p><b>8pm April 5th, 2019</b> at <b>Joe Goode Annex</b></p>
 
-<p><b>8pm April 5th, 2019</b> at <b>Joe Goode Annex</b></p>
+	<p>Jocelyn Reyes presents an excerpt of 'Magos' for West Wave Dance Festival.</p>
 
-<p>Jocelyn Reyes presents an excerpt of 'Magos' for West Wave Dance Festival.</p>
+	<p><a  class="tickets" href="https://joegoode.org/joe-goode-annex/annex-events/">&#x1F39F; Buy Tickets </a></p>
 
-<p><a  class="tickets" href="https://joegoode.org/joe-goode-annex/annex-events/">&#x1F39F; Buy Tickets </a></p>
 
+	<h2>
+		RAW presents Jocelyn Reyes
+		<div class='venue'>
+			<div class="date"><b>Oct 20</b> & <b>21</b></div>
+			
+		</div>
+	</h2>
 
-<h2>
-	RAW presents Jocelyn Reyes
-	<div class='venue'>
-		<div class="date"><b>Oct 20</b> & <b>21</b></div>
-		
-	</div>
-</h2>
+	<p><b>9pm October 20, 2018</b> and <b>7pm October 21, 2018</b> at <b>Safehouse Arts</b></p>
 
-<p><b>9pm October 20, 2018</b> and <b>7pm October 21, 2018</b> at <b>Safehouse Arts</b></p>
+	<p>Jocelyn Reyes presents Accretion for the RAW Fall edition.</p>
 
-<p>Jocelyn Reyes presents Accretion for the RAW Fall edition.</p>
 
+	<h2>
+		PUSHFest 2018
+		<div class='venue'>
+			<div class="date"><b>September 29</b> & <b>30</b></div>
+			<img src="./push.gif">
+		</div>
+	</h2>
 
-<h2>
-	PUSHFest 2018
-	<div class='venue'>
-		<div class="date"><b>September 29</b> & <b>30</b></div>
-		<img src="./push.gif">
-	</div>
-</h2>
+	<p><b>8pm September 29, 2018</b> and <b>7:30pm September 30, 2018</b> at <b>ODC</b></p>
 
-<p><b>8pm September 29, 2018</b> and <b>7:30pm September 30, 2018</b> at <b>ODC</b></p>
+	<p>Jocelyn Reyes presents 'Medium Rare'.</p>
 
-<p>Jocelyn Reyes presents 'Medium Rare'.</p>
 
+	<h2>
+		RAW presents Heidi Carlsen and Jocelyn Reyes
+		<div class='venue'>
+			<div class="date"><b>May 18</b> & <b>19</b></div>
+			
+		</div>
+	</h2>
 
-<h2>
-	RAW presents Heidi Carlsen and Jocelyn Reyes
-	<div class='venue'>
-		<div class="date"><b>May 18</b> & <b>19</b></div>
-		
-	</div>
-</h2>
+	<p><b>8pm May 18, 2018</b> and <b>9pm May 19, 2018</b> at <b>Safehouse Arts</b></p>
 
-<p><b>8pm May 18, 2018</b> and <b>9pm May 19, 2018</b> at <b>Safehouse Arts</b></p>
+	<p>Jocelyn Reyes presents 'Coming to Terms' for the RAW Spring edition.</p>
+	<p>'Coming to Terms' examines the shifting relationship between two people coming from unstable environments. This dance is about coming to terms with the past to understand the present. </p>
 
-<p>Jocelyn Reyes presents 'Coming to Terms' for the RAW Spring edition.</p>
-<p>'Coming to Terms' examines the shifting relationship between two people coming from unstable environments. This dance is about coming to terms with the past to understand the present. </p>
 
+	<h2> Mark Foehringer's Young Choreographers Forum SF</h2>
 
-<h2> Mark Foehringer's Young Choreographers Forum SF</h2>
+	<p><b>6pm March 18, 2018</b> at <b>Joe Goode Annex</b></p>
 
-<p><b>6pm March 18, 2018</b> at <b>Joe Goode Annex</b></p>
+	<p>Jocelyn Reyes presents 'Tres' as part of the Mark Foehringer's Young Choreographers Forum SF.</p>
+	<p> 'Tres' is a series of three female duets exploring different textures of a single self.</p>
 
-<p>Jocelyn Reyes presents 'Tres' as part of the Mark Foehringer's Young Choreographers Forum SF.</p>
-<p> 'Tres' is a series of three female duets exploring different textures of a single self.</p>
 
+	<h2>RAW presents Steamroller/Zulfikar Ali Bhutto/Jocelyn Reyes </h2>
 
-<h2>RAW presents Steamroller/Zulfikar Ali Bhutto/Jocelyn Reyes </h2>
+	<p><b>8pm January 11, 2018</b> and <b>8pm January 12, 2018</b> at <b>Safehouse Arts</b></p>
 
-<p><b>8pm January 11, 2018</b> and <b>8pm January 12, 2018</b> at <b>Safehouse Arts</b></p>
+	<p>Jocelyn Reyes presents 'Bits' for the RAW winter edition.</p>
+	<p>Bits is a quirky, humorous modern dance piece which examines interactions between the individual and the group using a fragmented movement language.</p>
 
-<p>Jocelyn Reyes presents 'Bits' for the RAW winter edition.</p>
-<p>Bits is a quirky, humorous modern dance piece which examines interactions between the individual and the group using a fragmented movement language.</p>
 
 
+	<h2> REYES @ UPSTREAM 3 </h2>
 
-<h2> REYES @ UPSTREAM 3 </h2>
+	<p><b>7:30pm December 7, 2017</b> at <b>The Sardine</b></p>
 
-<p><b>7:30pm December 7, 2017</b> at <b>The Sardine</b></p>
+	<p>Jocelyn Reyes presents a solo work.</p>
 
-<p>Jocelyn Reyes presents a solo work.</p>
+	<p>UPSTREAM is a micro-residency program designed to give up-and-coming artists a platform for experimentation in a tiny space. 
 
-<p>UPSTREAM is a micro-residency program designed to give up-and-coming artists a platform for experimentation in a tiny space. 
 
 
+	<h2>REYES @ Mbongui Square Festival<img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F34741692%2F72280026081%2F1%2Foriginal.jpg?w=800&rect=0%2C367%2C932%2C466&s=d058ef98964b3480ef78b671e2705189"></h2>
 
-<h2>REYES @ Mbongui Square Festival<img src="https://img.evbuc.com/https%3A%2F%2Fcdn.evbuc.com%2Fimages%2F34741692%2F72280026081%2F1%2Foriginal.jpg?w=800&rect=0%2C367%2C932%2C466&s=d058ef98964b3480ef78b671e2705189"></h2>
+	<p> <b>7pm November 11, 2017</b> and <b>7pm November 12, 2017</b> at <b>Zaccho Studio</b></p>
 
-<p> <b>7pm November 11, 2017</b> and <b>7pm November 12, 2017</b> at <b>Zaccho Studio</b></p>
+	<p>Jocelyn Reyes presents 'Bits' at MSF. </p>
 
-<p>Jocelyn Reyes presents 'Bits' at MSF. </p>
+	<p>Mbongui Square Festival is an annual festival that celebrates the performing and visual arts. Organized by Kiandanda Dance Theater, the festival gathers dance, music, visual arts and spoken word artists of varied style and artistic choices, from the Bay Area and across the world. </p>
 
-<p>Mbongui Square Festival is an annual festival that celebrates the performing and visual arts. Organized by Kiandanda Dance Theater, the festival gathers dance, music, visual arts and spoken word artists of varied style and artistic choices, from the Bay Area and across the world. </p>
 
 
+	<h2>REYES @ Fall LEVYsalon<img src="https://static1.squarespace.com/static/5988bbffbebafbccad45179f/t/59b2252746c3c498ebf433c3/1507159554843/?format=1500w"></h2>
 
-<h2>REYES @ Fall LEVYsalon<img src="https://static1.squarespace.com/static/5988bbffbebafbccad45179f/t/59b2252746c3c498ebf433c3/1507159554843/?format=1500w"></h2>
+	<p><b>8:30pm November 4, 2017</b> at <b>LEVYstudio</b></p>
 
-<p><b>8:30pm November 4, 2017</b> at <b>LEVYstudio</b></p>
+	<p>Jocelyn Reyes presents 'Coming To Terms'</p>
 
-<p>Jocelyn Reyes presents 'Coming To Terms'</p>
+	<p>LEVYsalon is a micro-residency program designed to give up-and-coming artists of all disciplines a platform for expression and experimentation. The program concludes with an evening showcase, and each artist/ensemble presents five minutes of their work in progress.</p>
 
-<p>LEVYsalon is a micro-residency program designed to give up-and-coming artists of all disciplines a platform for expression and experimentation. The program concludes with an evening showcase, and each artist/ensemble presents five minutes of their work in progress.</p>
 
+	<h2>Room 204</h2>
+	<p>August 18 2017 </p>
 
-<h2>Room 204</h2>
-<p>August 18 2017 </p>
+	<p>Jocelyn Reyes hosts an evening of sight-specific dance solos and interactive installations in a home. </p>
 
-<p>Jocelyn Reyes hosts an evening of sight-specific dance solos and interactive installations in a home. </p>
 
-
-<p><a href="https://www.facebook.com/events/1505384666193810/?acontext=%7B%22source%22%3A5%2C%22page_id_source%22%3A1495790180700649%2C%22action_history%22%3A[%7B%22surface%22%3A%22page%22%2C%22mechanism%22%3A%22main_list%22%2C%22extra_data%22%3A%22%7B%5C%22page_id%5C%22%3A1495790180700649%2C%5C%22tour_id%5C%22%3Anull%7D%22%7D]%2C%22has_source%22%3Atrue%7D">Facebook Event</a></p>
-
-
-
-
-
-
-
-
-
-
+	<p><a href="https://www.facebook.com/events/1505384666193810/?acontext=%7B%22source%22%3A5%2C%22page_id_source%22%3A1495790180700649%2C%22action_history%22%3A[%7B%22surface%22%3A%22page%22%2C%22mechanism%22%3A%22main_list%22%2C%22extra_data%22%3A%22%7B%5C%22page_id%5C%22%3A1495790180700649%2C%5C%22tour_id%5C%22%3Anull%7D%22%7D]%2C%22has_source%22%3Atrue%7D">Facebook Event</a></p>
 </div>
 <div class="footer">
 	Copyright 2020 REYES Dance. <!-- ©  -->
 </div>
+
+</div>
+
+
+
+
+
+
+
+
+
+<script type="text/javascript" src="/colors.js"></script>
