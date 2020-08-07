@@ -15,5 +15,5 @@
 		setInterval(function () {
 			if (!hasMoused && Math.random() > 0.95) color()
 		}, 500)
-	}, 4000)
+	}, 8000)
 })

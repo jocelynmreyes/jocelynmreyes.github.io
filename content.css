@@ -5,6 +5,11 @@ body {
 	display: flex;
 	flex-direction: column;
 }
+h1 {
+	font-weight: normal;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+}
 .content {
 	width: 700px;
 	max-width: 100%;
@@ -56,10 +61,9 @@ body {
 .signup {
 	padding: 40px;
 	padding-top: 30px;
-	background: rgb(34, 122, 218);
 	border-radius: 3px;
 	margin-top: 60px;
-	color: #d8e2ff;
+	color: #ffffffcf;
 }
 .signup b {
 	color: #fff;
@@ -67,10 +71,15 @@ body {
 .signup .button {
 	padding: 10px 20px;
 	border: 0;
-	background: #00218a;
+	background: #000000aa;
 	border-radius: 3px;
 	color: #fff;
 	cursor: pointer;
+	transition: 0.2s;
+}
+.signup .button:hover {
+	transform: translate(0, -2px);
+	box-shadow: 0 8px 20px #00000020, 0 2px 3px #00000022;
 }
 .signup h1 {
 	margin: 0;
