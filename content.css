@@ -43,6 +43,7 @@ body {
 }
 .header-title path {
 	fill: #000;
+	transition: 0.2s;
 }
 /*.header-title a{
     color: #fff;
