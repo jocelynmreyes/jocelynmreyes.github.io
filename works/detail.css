@@ -1,0 +1,124 @@
+body {
+    /*background: #484c57;//#414551;*/
+}
+.header-title svg path{
+    fill: hsl(325deg 100% 80%);
+}
+h1, h2, h3, .current {
+    color: hsl(325deg 100% 80%);
+}
+
+
+.photos img {
+    width: 70vw;
+    max-width: 100vw;
+    max-height: 100%;
+    opacity: .5;
+    transition: .4s;
+    margin: 0 10px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.photos img:hover {
+    opacity: .7
+}
+
+.photos img.slick-center {
+    opacity: 1;
+}
+.slick-slide {
+    height: auto !important;
+    cursor: pointer;
+}
+.slick-next {
+    right: 2px;
+}
+.slick-prev, .slick-next {
+    width: auto;
+    height: auto;
+}
+.slick-prev:before, .slick-next:before{
+    font-size: 40px;
+}
+.slick-prev {
+    left: 2px;
+    z-index: 2;
+}
+
+
+.signup {
+    background: hsl(325deg 100% 80% / 29%);
+}
+.signup .button {
+    background: hsl(325deg 100% 80%);
+}
+.img-wrap-mobile {
+    display: none;
+    margin: 0 -20px;
+    margin-bottom: 40px;
+    text-align: center;
+    /*background-color: rgba(255, 255, 255, 0.12);*/
+}
+
+.person::after {
+    content: " ";
+    display: block;
+    clear: both;
+}
+
+.person h2 {
+    margin-top: 0
+}
+.img-wrap img {
+    width: 160px;
+    /*border: 5px solid rgba(255, 255, 255, 0.21); //#51586e;*/
+    box-sizing: border-box;
+    padding-top: 6px;
+}
+.img-wrap {
+    padding-right: 35px;
+    float: left;
+}
+#headshot-mobile {
+    max-width: 40%;
+    /*border: 3px solid rgba(255, 255, 255, 0.21);*/
+}
+iframe {
+    width: 700px;
+    max-width: 100%;
+    height:  400px;
+    background: black;
+}
+.detail {
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 40px;
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 0;
+}
+.detail h1 {
+    margin:  0;
+}
+.dark {
+    background: #000;
+    padding: 20px 0;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.dark .footer {
+    color: #ddd;
+}
+.desc {
+    width: 600px;
+}
+@media(max-width: 740px) {
+    .img-wrap {
+        display: none;
+    }
+    .img-wrap-mobile {
+        display: block;
+    }
+}
