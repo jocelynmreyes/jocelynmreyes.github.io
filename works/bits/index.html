@@ -18,10 +18,10 @@
     
 
 .header-title svg path{
-    fill: hsl(359deg 100% 55%);
+    fill: hsl(225deg 27% 30%);
 }
 h1, h2, h3, .current {
-    color: hsl(359deg 100% 55%);
+    color: hsl(225deg 27% 30%);
 }
 
 </style>
@@ -87,6 +87,7 @@ gtag('config', 'UA-108790729-1');
 </div>
 
 <div class="dark">
+<h1>Photos</h1>
 
    <div class='photos'>
     <img class='first' src="/splash.jpg">
@@ -124,19 +125,6 @@ gtag('config', 'UA-108790729-1');
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
 <script type="text/javascript" src="/slick/slick.min.js"></script>
-<script type="text/javascript">
-    function slick(el){
-        $(el).slick({
-            adaptiveHeight: true,
-            centerMode: true,
-            variableWidth: true,
-            focusOnSelect: true,
-        })
-    }
-    ;[].slice.call(document.querySelectorAll('.first')).forEach(function(img){
-        if(img.complete) slick(img.parentElement)
-        else img.onload = slick.bind(null, img.parentElement)
-    })
-</script>
+<script src="/works/carousel.js"></script>
 
 <script type="text/javascript" src="/colors.js"></script>
