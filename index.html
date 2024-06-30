@@ -21,62 +21,25 @@
     gtag('config', 'UA-108790729-1');
   </script>
   <style>
-    .lasos {
-      -webkit-mask-image: linear-gradient(transparent, black 5%, black 95%, transparent);
-      width: 100%;
-      display: block;
-      margin-top: -8vw;
-    }
-
-    .lasos-tickets {
-      display: block;
-      font: inherit;
-      text-decoration: none;
-      text-align: center;
-      background: hsl(42deg 91% 60%);
-      font-size: 3vw;
-      /* box-shadow: 0 11px 20px hsl(192deg 52% 29%); */
-      color: #fff;
-      display: flex;
+    
+    .dios-wrap {
       position: absolute;
-      right: 3vw;
-      bottom: 3vw;
-      left: 45vw;
-      /* margin-top: -615px; */
-      /* position: absolute; */
-    }
-
-    .lasos-tickets-text {
-      flex: 1;
-    }
-
-    .lasos-tickets-arrow {
-      background-color: hsl(42deg 91% 48%);
+      inset: 0;
       display: flex;
+      flex-direction: column;
       align-items: center;
-      padding: 0 20px;
-      position: absolute;
-      right: 0;
-      height: 100%;
-    }
-
-    .lasos-wrap {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      position: absolute;
-      width: 100%;
-      height: 100%;
-      top: 0;
-      left: 0;
+      justify-content: flex-end;
       overflow: hidden;
     }
 
-    .splash {
-      /* background: url("photos/MAGOS 1 small.jpg"); */
-      background: linear-gradient(181deg, #48a5be 50%, #77c5dc 51%);
-      background-size: cover;
-      background-position: center;
+    .dios-wrap img {
+      margin-bottom: -21vw;
+      max-width: 100vw;
+    }
+
+   .splash {
+      background: linear-gradient(90deg, #42369e, #594db4, #655fc4, #726ada);
+      overflow: hidden;
       height: 100%;
       margin-left: auto;
       margin-right: auto;
@@ -98,6 +61,7 @@
       letter-spacing: 2px;
       z-index: 2;
       position: relative;
+      padding-top: 10px;
     }
 
     .highlight:hover {
@@ -125,7 +89,7 @@
       fill: #fff;
     }
 
-    @media(max-width: 870px) {
+    @media(max-width: 960px) {
       .labels {
         margin: 0;
         max-width: 50vw;
@@ -136,18 +100,14 @@
         left: 4%
       }
 
-      .lasos-tickets {
-        bottom: 0;
-        left: 0;
-        right: 0;
-        position: absolute;
-        box-sizing: border-box;
-        border-radius: 0;
-        font-size: 30px;
+      .dios-wrap {
+        align-items: center;
+        justify-content: flex-end;
+        bottom: -12vw;
       }
 
-      .lasos-tickets-text {
-        margin: 20px 0;
+      .dios-wrap img {
+        margin-bottom: 0;
       }
 
       .splash {
@@ -183,12 +143,15 @@
       <a class="highlight" href="/donate">Donate</a>
       <a class="highlight" href="/contact">Contact </a>
     </div>
-    <div class="lasos-wrap">
+
+    <div class="dios-wrap">
       <picture>
-        <source srcset="/lasos_poster_mobile.jpg" media="(max-width: 870px)" />
-        <img src="/LASOS Group image.jpg" class="lasos" />
+        <source srcset="/photos/dios_pyramid_small.jpg" media="(max-width: 960px)" />
+        <img src="/photos/dios_brooke_small.jpg" class="lasos" />
       </picture>
     </div>
+
+
 
     <div class="company-title">
       <svg viewBox="0 0 227 52" fill="none" xmlns="http://www.w3.org/2000/svg">
