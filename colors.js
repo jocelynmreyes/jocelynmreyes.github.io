@@ -11,9 +11,10 @@
 	p.addEventListener('mouseover', mouseColor)
 	p.addEventListener('click', mouseColor)
 
-	setTimeout(function () {
-		setInterval(function () {
-			if (!hasMoused && Math.random() > 0.95) color()
-		}, 500)
-	}, 2000)
+	if(!p.classList.contains('disable-auto-color'))
+		setTimeout(function () {
+			setInterval(function () {
+				if (!hasMoused && Math.random() > 0.95) color()
+			}, 500)
+		}, 2000)
 })
