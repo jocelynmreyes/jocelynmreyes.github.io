@@ -28,18 +28,22 @@
       display: flex;
       flex-direction: column;
       align-items: center;
-      justify-content: flex-end;
+      justify-content: center;
       overflow: hidden;
     }
 
     .dios-wrap img {
-      margin-bottom: calc(-22 * min(9vw, 18vh)/10);
+      margin-bottom: calc(-22 * min(3vw, 6vh)/10);
       max-width: 100vw;
-      max-height: 250vh;
+      max-height: 133vh;
+            mask-image:         linear-gradient(180deg,transparent 0%,black 10%,black 80%,transparent 100%),
+        linear-gradient(90deg,transparent 0%,black 30%,black 90%,transparent 100%);
+        mask-composite: intersect;
+
     }
 
    .splash {
-      background: linear-gradient(90deg, #42369e, #594db4, #655fc4, #726ada);
+      background: linear-gradient(90deg, #00111f,#000a1b,#000d1d,#000815, #050510);
       overflow: hidden;
       height: 100%;
       margin-left: auto;
@@ -82,7 +86,7 @@
     }
 
     .company-title svg {
-      width: 30vw;
+      width: 25vw;
       height: auto;
     }
 
@@ -150,8 +154,8 @@
 
     <div class="dios-wrap">
       <picture>
-        <source srcset="/photos/dios_pyramid_small.jpg" media="(max-width: 960px)" />
-        <img src="/photos/dios_brooke_small.jpg" class="lasos" />
+        <source srcset="/photos/sqn8_splash_2k.jpg" media="(max-width: 960px)" />
+        <img src="/photos/sqn8_splash_2k.jpg" class="lasos" />
       </picture>
     </div>
 
