@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Digital program for String Quartet No. ATE by REYES Dance.">
+  <meta property="og:title" content="String Quartet No. ATE Program | REYES Dance">
+  <meta property="og:description" content="Credits, artist notes, creative team bios, and supporters for String Quartet No. ATE.">
+  <meta property="og:image" content="http://reyesdance.com/photos/sqn8_splash_2k.jpg">
+  <meta property="og:url" content="http://reyesdance.com/ate/program">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" type="image/svg+xml" href="/logo.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+  <title>String Quartet No. ATE Program | REYES Dance</title>
+  <style>
+    :root {
+      --ink: #f5eddc;
+      --muted: #cdbb96;
+      --paper: #010815;
+      --paper-deep: #010815;
+      --rule: rgba(245, 237, 220, .3);
+      --wash: rgba(245, 237, 220, .08);
+      --body-font: "Bodoni 72 Oldstyle", "Bodoni 72", "Bodoni MT", Didot, "Times New Roman", serif;
+      --script-font: Italianno, "Snell Roundhand", cursive;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      color: var(--ink);
+      background: var(--paper-deep);
+      font-family: var(--body-font);
+      font-size: 21px;
+      line-height: 1.42;
+      letter-spacing: 0;
+    }
+
+    a {
+      color: inherit;
+      text-decoration-color: rgba(245, 237, 220, .52);
+      text-underline-offset: .15em;
+    }
+
+    p {
+      margin: 0 0 1em;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-weight: normal;
+      letter-spacing: 0;
+    }
+
+    .banana-library {
+      position: absolute;
+      width: 0;
+      height: 0;
+      overflow: hidden;
+    }
+
+    .page {
+      width: min(100%, 1120px);
+      margin: 0 auto;
+      padding: clamp(16px, 3vw, 42px);
+    }
+
+    .program {
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(245, 237, 220, .32);
+      background: var(--paper);
+      box-shadow: 0 24px 80px rgba(31, 20, 7, .22);
+    }
+
+    .masthead,
+    main,
+    footer {
+      position: relative;
+      z-index: 1;
+    }
+
+    .masthead {
+      display: grid;
+      gap: clamp(34px, 6vw, 76px);
+      justify-items: center;
+      padding: clamp(40px, 7vw, 92px) clamp(28px, 8vw, 108px) clamp(44px, 6vw, 78px);
+      text-align: center;
+    }
+
+    .topline {
+      width: 100%;
+      display: grid;
+      justify-items: start;
+      color: var(--muted);
+    }
+
+    .topline a {
+      display: block;
+      text-decoration: none;
+    }
+
+    .reyes-mark {
+      display: block;
+      width: clamp(148px, 28vw, 254px);
+      height: auto;
+    }
+
+    .reyes-mark path {
+      fill: var(--ink);
+    }
+
+    .ornament {
+      width: clamp(64px, 9vw, 112px);
+      height: auto;
+      display: block;
+      color: var(--ink);
+    }
+
+    .hero-copy {
+      width: min(100%, 760px);
+      padding: clamp(28px, 5vw, 54px) 0;
+    }
+
+    .hero-copy h1 {
+      margin: 0;
+      line-height: 0;
+    }
+
+    .hero-copy img {
+      display: block;
+      width: min(100%, 860px);
+      height: auto;
+      margin: 0 auto;
+    }
+
+    main {
+      padding: 0 clamp(28px, 8vw, 108px) clamp(54px, 8vw, 98px);
+    }
+
+    .contents {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 10px 24px;
+      margin-bottom: clamp(40px, 7vw, 76px);
+      padding: 18px;
+      border-bottom: 1px solid var(--rule);
+      color: var(--muted);
+      font-size: 17px;
+      text-transform: uppercase;
+    }
+
+    .contents a {
+      text-decoration: none;
+    }
+
+    section {
+      margin-bottom: clamp(42px, 7vw, 78px);
+    }
+
+    .section-title {
+      display: grid;
+      grid-template-columns: auto minmax(18px, 1fr) auto minmax(18px, 1fr) auto;
+      align-items: center;
+      gap: clamp(10px, 2vw, 18px);
+      margin: 0 0 22px;
+      text-align: center;
+    }
+
+    .section-title::before,
+    .section-title::after {
+      content: "";
+      grid-row: 1;
+      border-top: 1px solid var(--rule);
+    }
+
+    .section-title::before {
+      grid-column: 2;
+    }
+
+    .section-title::after {
+      grid-column: 4;
+    }
+
+    .section-title span {
+      display: block;
+      grid-column: 3;
+      grid-row: 1;
+      font-family: var(--script-font);
+      font-size: clamp(54px, 7vw, 86px);
+      line-height: .8;
+    }
+
+    .section-banana {
+      width: clamp(34px, 4vw, 52px);
+      height: auto;
+      transform: rotate(-18deg);
+    }
+
+    .section-banana:first-child {
+      grid-column: 1;
+      grid-row: 1;
+    }
+
+    .section-banana:last-child {
+      grid-column: 5;
+      grid-row: 1;
+      transform: scaleX(-1) rotate(-18deg);
+    }
+
+    .prose {
+      max-width: 820px;
+      margin: 0 auto;
+    }
+
+    .note {
+      padding: clamp(24px, 4vw, 42px);
+      background: var(--wash);
+      border: 1px solid rgba(245, 237, 220, .16);
+    }
+
+    .signature {
+      margin-top: 22px;
+      font-family: var(--script-font);
+      font-size: 52px;
+      line-height: .9;
+    }
+
+    .credit-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0 clamp(28px, 5vw, 72px);
+      margin: 0;
+    }
+
+    .credit {
+      border-bottom: 1px solid rgba(245, 237, 220, .14);
+      padding: 14px 0 15px;
+    }
+
+    .credit dt {
+      margin-bottom: 3px;
+      color: var(--muted);
+      font-size: 15px;
+      text-transform: uppercase;
+    }
+
+    .credit dd {
+      margin: 0;
+      font-size: clamp(21px, 2vw, 26px);
+      line-height: 1.25;
+    }
+
+    .team-block + .team-block {
+      margin-top: 42px;
+    }
+
+    .team-block h3 {
+      margin: 0 0 18px;
+      color: var(--muted);
+      font-size: 17px;
+      text-align: center;
+      text-transform: uppercase;
+    }
+
+    .bios {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: clamp(18px, 3vw, 34px);
+    }
+
+    .bio,
+    .placeholder {
+      min-width: 0;
+      padding-top: 18px;
+      border-top: 1px solid rgba(245, 237, 220, .18);
+    }
+
+    .bio h4,
+    .placeholder h4 {
+      margin: 0 0 10px;
+      font-size: clamp(25px, 2.7vw, 33px);
+      font-style: italic;
+      font-weight: normal;
+      line-height: 1.15;
+    }
+
+    .bio h4 span {
+      color: var(--muted);
+      font-size: .62em;
+      font-style: normal;
+      white-space: nowrap;
+    }
+
+    .bio p:last-child,
+    .placeholder p:last-child {
+      margin-bottom: 0;
+    }
+
+    .placeholder {
+      color: var(--muted);
+      background: rgba(245, 237, 220, .05);
+      padding: 18px;
+    }
+
+    .dedication {
+      max-width: 650px;
+      margin: 0 auto;
+      padding: clamp(28px, 5vw, 48px);
+      border-top: 1px solid var(--rule);
+      border-bottom: 1px solid var(--rule);
+      text-align: center;
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: clamp(24px, 4vw, 52px);
+    }
+
+    .about-grid h3 {
+      margin: 0 0 10px;
+      color: var(--muted);
+      font-size: 17px;
+      text-transform: uppercase;
+    }
+
+    .connect {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: clamp(16px, 3vw, 28px);
+    }
+
+    .qr {
+      display: block;
+      padding: clamp(14px, 2vw, 20px);
+      border: 1px solid rgba(245, 237, 220, .18);
+      background: rgba(245, 237, 220, .06);
+    }
+
+    .qr h3 {
+      margin: 0 0 8px;
+      font-family: var(--script-font);
+      font-size: clamp(39px, 4vw, 54px);
+      font-weight: normal;
+      line-height: .85;
+    }
+
+    .qr p {
+      color: var(--muted);
+      font-size: 18px;
+      overflow-wrap: anywhere;
+    }
+
+    .supporters {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      align-items: center;
+      gap: clamp(14px, 2vw, 24px);
+      margin-top: 24px;
+    }
+
+    .logo {
+      min-height: 118px;
+      display: grid;
+      place-items: center;
+      padding: 18px;
+      border: 1px solid rgba(245, 237, 220, .16);
+      background: rgba(245, 237, 220, .94);
+    }
+
+    .logo img {
+      width: 100%;
+      max-height: 82px;
+      object-fit: contain;
+      mix-blend-mode: multiply;
+    }
+
+    footer {
+      display: flex;
+      justify-content: space-between;
+      gap: 24px;
+      padding: 0 clamp(28px, 8vw, 108px) clamp(38px, 6vw, 64px);
+      color: var(--muted);
+      font-size: 16px;
+      text-transform: uppercase;
+    }
+
+    @media (max-width: 820px) {
+      body {
+        font-size: 19px;
+      }
+
+      .masthead {
+        min-height: auto;
+        gap: 24px;
+      }
+
+      .credit-grid,
+      .bios,
+      .about-grid,
+      .connect {
+        grid-template-columns: 1fr;
+      }
+
+      .supporters {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+    }
+
+    @media (max-width: 560px) {
+      .page {
+        padding: 4px;
+      }
+
+      .masthead,
+      main,
+      footer {
+        padding-left: 18px;
+        padding-right: 18px;
+      }
+
+      .topline,
+      footer {
+        text-align: center;
+      }
+
+      .topline {
+        justify-items: center;
+      }
+
+      .hero-copy img {
+        width: min(100%, 460px);
+      }
+
+      .supporters {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <svg class="banana-library" aria-hidden="true" focusable="false">
+    <symbol id="banana" viewBox="0 0 136 134">
+      <path class="disable-auto-color" d="M50.3426 58.1307C42.1959 60.9501 31.6756 69.9095 31.6756 69.9095C31.6756 69.9095 40.0003 74.6132 45.8982 75.7047C57.439 77.8404 68.4328 70.7143 79.6627 71.3102C83.591 71.5186 88.7557 72.9028 88.7557 72.9028C88.7557 72.9028 76.0155 82.5327 67.8622 87.4033C55.8041 94.6065 34.4292 96.6652 36.2446 102.158C37.0233 104.513 37.5952 105.949 40.4197 106.947C48.1608 109.685 64.4676 107.703 78.7383 102.938C90.314 99.0729 106.181 87.9944 106.181 87.9944C106.181 87.9944 107.769 90.6833 107.138 94.2825C104.922 106.922 90.6725 114.803 84.0332 126.133C81.5915 130.299 79.8091 133.461 79.8091 133.461C79.8091 133.461 88.0698 134.803 95.563 129.929C104.682 123.998 129.029 99.659 120.544 84.6185C119.374 82.5465 115.903 80.6702 115.903 80.6702L105.767 81.2195L93.4793 72.264L87.6075 61.1226C87.6075 61.1226 81.9919 58.1145 78.1122 56.951C67.7157 53.8332 60.5996 54.5809 50.3426 58.1307Z" fill="currentColor"/>
+      <path class="disable-auto-color" d="M110.879 9.13019C111.866 16.6929 114.02 22.2247 112.479 30.4182C110.099 43.0757 106.118 57.3524 91.9559 64.1908L95.943 71.8384L107.001 79.689L116.801 78.5771C116.801 78.5771 125.318 66.64 128.429 59.3266C134.296 45.5348 141.521 11.692 124.045 2.02988C120.033 -0.188737 112.479 0.00400508 112.479 0.00400508C112.479 0.00400508 110.41 5.54228 110.879 9.13019Z" fill="currentColor"/>
+      <path class="disable-auto-color" d="M0.605882 108.658C0.605882 108.658 15.8917 116.425 32.506 117.108C56.7068 118.102 85.5015 107.643 105.14 93.9325L105.11 90.4722C105.11 90.4722 90.5839 100.84 79.976 104.643C64.328 110.252 49.5496 113.227 37.5924 108.606C33.4907 107.021 33.9517 104.73 33.0401 101.596C31.4543 96.1442 51.0016 92.1069 61.325 87.8005C70.6209 83.9226 83.779 74.1927 83.779 74.1927L79.295 73.4073C67.4592 80.6347 46.7558 89.5629 32.2075 92.4362C23.3134 94.1928 4.73996 92.3403 0.000958619 103.795L0.605882 108.658Z" fill="currentColor"/>
+    </symbol>
+  </svg>
+
+  <div class="page">
+    <article class="program">
+      <header class="masthead">
+        <div class="topline">
+          <a href="/" aria-label="REYES Dance home">
+            <svg class="reyes-mark" viewBox="0 0 227 52" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M107.687 29.6947L88.7872 0.847382H102.571L113.229 19.6763L124.527 0.847382H137.671L118.771 29.6947V51.1526H107.687V29.6947Z"/>
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M19.7582 0.847382H0.289795V10.2263H11.374H18.6214C19.6161 10.2263 20.6345 10.2974 21.6766 10.4395C22.7187 10.5816 23.6424 10.8658 24.4477 11.2921C25.253 11.6711 25.9161 12.2395 26.4372 12.9974C26.9582 13.7553 27.2187 14.7737 27.2187 16.0526C27.2187 17.4263 26.9108 18.4921 26.2951 19.25C25.7266 20.0079 24.9924 20.5763 24.0924 20.9553C23.1924 21.2869 22.174 21.5 21.0372 21.5947C19.9477 21.6421 18.9056 21.6658 17.9108 21.6658H11.374H0.289795V51.1526H11.374V31.0447H16.8451L27.3608 51.1526H40.6477L27.8582 29.9079C31.4108 29.2447 34.1108 27.6816 35.9582 25.2184C37.8056 22.7079 38.7293 19.6763 38.7293 16.1237C38.7293 13.1869 38.2082 10.7474 37.1661 8.80527C36.1714 6.8158 34.7977 5.25264 33.0451 4.1158C31.3398 2.93159 29.3266 2.10264 27.0056 1.62896C24.7319 1.10791 22.3161 0.847382 19.7582 0.847382Z"/>
+              <path d="M143.754 0.847382H177.93V11.079H154.838V20.4579H176.651V30.6895H154.838V40.9211H179.209V51.1526H143.754V0.847382Z"/>
+              <path d="M83.296 0.847382H49.1197V11.079H72.2118V20.4579H50.3987V30.6895H72.2118V40.9211H47.8408V51.1526H83.296V0.847382Z"/>
+              <path d="M201.542 30.3675H211.182C214.096 30.3675 216.458 32.7294 216.458 35.6429C216.458 38.5564 214.098 40.9183 211.184 40.9183H188.7V51.1526H211.537C219.998 51.1526 226.858 44.2929 226.858 35.8311C226.858 27.3693 219.998 20.5096 211.537 20.5096H202.177C199.588 20.5096 197.489 18.4107 197.489 15.8215C197.489 13.2324 199.588 11.1335 202.177 11.1335H221.518V0.685059H201.542C193.345 0.685059 186.7 7.32969 186.7 15.5263C186.7 23.7228 193.345 30.3675 201.542 30.3675Z"/>
+            </svg>
+          </a>
+        </div>
+
+        <div class="hero-copy">
+          <h1><img src="./assets/ate-logo.png" alt="String Quartet Number ATE"></h1>
+        </div>
+      </header>
+
+      <main>
+        <nav class="contents" aria-label="Program sections">
+          <a href="#about">About</a>
+          <a href="#note">Artist's Note</a>
+          <a href="#credits">Credits</a>
+          <a href="#team">Creative Team</a>
+          <a href="#reyes">REYES Dance</a>
+          <a href="#odc">ODC</a>
+          <a href="#connect">Connect</a>
+        </nav>
+
+        <section id="about">
+          <h2 class="section-title"><svg class="section-banana" aria-hidden="true"><use href="#banana"></use></svg><span>About</span><svg class="section-banana" aria-hidden="true"><use href="#banana"></use></svg></h2>
+          <div class="prose">
+            <p><strong>String Quartet No. ATE</strong> is a new evening-length dance exploring the tension between food, pleasure, and health, ignited by Reyes' adult Type 2 diabetes diagnosis. Set to a live performance of Shostakovich's String Quartet No. 8 by members of One Found Sound, this work moves through desire, temptation, obsession and resilience.</p>
+            <p>Reyes created <em>String Quartet No. ATE</em> in collaboration with movement artists Caitlin Hicks, Maya Mohsin, Giovana Sales Nascimento da Silva, Giulia Sales Nascimento da Silva and Brooke Terry, sound designers Emmet Webster and Michael Webster, costume designer Monique Prieto, and lighting designer Thomas Bowersox.</p>
+            <p><em>String Quartet No. ATE</em> is generously supported by grants from the Kenneth Rainin Foundation and the San Francisco Arts Commission. The development of the work has also been supported by the Berkeley Ballet Artist in Residency Program, El Saloncito and the MERDE Project.</p>
+          </div>
+        </section>
+
+        <section id="note">
+          <h2 class="section-title"><svg class="section-banana" aria-hidden="true"><use href="#banana"></use></svg><span>Artist's Note</span><svg class="section-banana" aria-hidden="true"><use href="#banana"></use></svg></h2>
+          <div class="prose note">
+            <p>This project has been such a joy to create. While it was initially inspired by my Type 2 diabetes diagnosis, this dance has truly taken a life of its own and become a metaphor for all kinds of obsessions. I don't want to give any spoilers away, so if you'd like to learn more about the project come chat with me and my creative team after the show!</p>
+            <p>HUGE thanks to my brilliant collaborators, to our awesome production team and to everyone joining us tonight! I hope you enjoy this work as much as we enjoyed creating it!</p>
+            <p>With so much gratitude and excitement,</p>
+            <p class="signature">Jocelyn</p>
+          </div>
+        </section>
+
+        <section id="credits">
+          <h2 class="section-title"><svg class="section-banana" aria-hidden="true"><use href="#banana"></use></svg><span>Credits</span><svg class="section-banana" aria-hidden="true"><use href="#banana"></use></svg></h2>
+          <dl class="credit-grid">
+            <div class="credit">
+              <dt>Concept and Direction</dt>
+              <dd>Jocelyn Reyes</dd>
+            </div>
+            <div class="credit">
+              <dt>Performers, Dance Quartet</dt>
+              <dd>Madison Lindgren, Maya Mohsin, Giovana Sales Nascimento da Silva, Giulia Sales Nascimento da Silva</dd>
+            </div>
+            <div class="credit">
+              <dt>Performers, Cameo Trio</dt>
+              <dd>Jonathan Kim, David Le, Ale Preciado</dd>
+            </div>
+            <div class="credit">
+              <dt>Choreography</dt>
+              <dd>Jocelyn Reyes in collaboration with the performers</dd>
+            </div>
+            <div class="credit">
+              <dt>String Quartet Musicians</dt>
+              <dd>One Found Sound</dd>
+            </div>
+            <div class="credit">
+              <dt>Music</dt>
+              <dd>Dimitri Shostakovich's String Quartet No. 8 in C Minor, arranged by Jocelyn Reyes</dd>
+            </div>
+            <div class="credit">
+              <dt>Lighting Design</dt>
+              <dd>Thomas Bowersox</dd>
+            </div>
+            <div class="credit">
+              <dt>Costume Design</dt>
+              <dd>Assembled by Jocelyn Reyes, tailored by May Lee</dd>
+            </div>
+            <div class="credit">
+              <dt>Stage Manager</dt>
+              <dd>Annie Tillis</dd>
+            </div>
+          </dl>
+        </section>
+
+        <section id="team">
+          <h2 class="section-title"><svg class="section-banana" aria-hidden="true"><use href="#banana"></use></svg><span>Creative Team</span><svg class="section-banana" aria-hidden="true"><use href="#banana"></use></svg></h2>
+
+          <div class="team-block">
+            <h3>Dance Artists</h3>
+            <div class="bios">
+              <article class="bio">
+                <h4>Madison Lindgren <span>(she/they)</span></h4>
+                <p>Madison Lindgren began her dance training in Lubbock, Texas, before continuing her education at the University of Utah and the Alonzo King LINES Ballet BFA Program at Dominican University. She is a graduate of the LINES Training Program and has since performed professionally with several Bay Area companies, most recently with REYES Dance, RAWDance, and Post:ballet.</p>
+              </article>
+              <article class="bio">
+                <h4>Maya Mohsin <span>(she/they)</span></h4>
+                <p>Maya Mohsin is a dancer, choreographer, and teacher based in Oakland, CA. In 2022, they received their BFA in Dance from Dominican University Of California with the Alonzo King Lines Ballet BFA program, along with a minor in Community Action and Social Change. During her time in university, she performed works by Christian Burns, Gregory Dawson, Carmen Rosenstraten, Nick Korkos, Sidra Bell, and Dexandro Montalvo. Since graduating, Maya has danced for Jocelyn Reyes for REYES Dance, Roseann Baker, Andrea Salzar, Jennifer Perfilio Movement Works, Addison Norman and Erin Coyne. In 2022, they received the Give Em' Hope Award from the SF Gay Men's Chorus.</p>
+              </article>
+              <article class="bio">
+                <h4>Giovana Sales Nascimento da Silva <span>(she/her)</span></h4>
+                <p>Giovana Sales Nascimento da Silva is a Brazilian contemporary dancer based in the Bay Area. A graduate of the Alonzo King LINES Ballet Training Program, her practice bridges contemporary, ballet, and Afro-Brazilian styles. Her career is deeply rooted in her homeland and cultural displacement. Giovana has collaborated with acclaimed artists such as Micaela G. Taylor, Rena Butler, Rosangela Silvestre, and Mike Tyus, performing with Bay Area companies such as Kristin Damrow &amp; Company, REYES Dance, and Robert Moses' KIN. Her studies in Social Work at the Federal University of São Paulo profoundly informs her understanding of the dance world and the world itself.</p>
+              </article>
+              <article class="bio">
+                <h4>Giulia Sales Nascimento da Silva <span>(she/her)</span></h4>
+                <p>Giulia Sales Nascimento da Silva is a Brazilian contemporary dancer based in Oakland. Originally from the <em>periferia</em> of São Vicente, São Paulo, her journey began through local social projects, leading to professional stages across Brazil. A graduate of the LINES Ballet Training Program, her practice integrates the rhythmic complexity of Brazilian modalities into contemporary frameworks. In the U.S, Giulia has performed with Robert Moses' KIN, Kristin Damrow &amp; Company, and REYES Dance, collaborating with artists like Micaela G. Taylor and Mike Tyus. Her artistry investigates a non-universal dance, reflecting the cultural and social contexts from which it emerges.</p>
+              </article>
+              <article class="bio">
+                <h4>Jonathan Kim <span>(he/any)</span></h4>
+                <p>Jonathan Kim is a dance artist currently based in the Bay Area. He is a company member with FACT/SF and recently worked with UNA productions, RAWdance, Repertory Dance Theatre (2019-2024), and SALT Contemporary Dance, among others. Choreographic and pedagogical interests include exploring the queer experience, identity, softness, groove, collaboration, choice-making, and non-traditional partnering. When not dancing, you can find them napping, drinking juice, or reading a good sci-fi/fantasy novel. Drag name: LUSTER.</p>
+              </article>
+              <article class="bio">
+                <h4>David Le <span>(he/they)</span></h4>
+                <p>David Le, born and raised in San Jose, brings a rich blend of cultural and street dance influences into contemporary performance. A BFA graduate from San Jose State University, he's worked with artists like Sean Dorsey, Doug Varone, Kyle Abraham, and continues to move between communities, collaborating with groups like Decipher and Archive Dance Companies. Beyond the stage, David embodies care as a neuromuscular therapist and a proud human to his deaf dog, Wilbur.</p>
+              </article>
+              <article class="bio">
+                <h4>Alejandra Preciado <span>(she/her)</span></h4>
+                <p>Alejandra Preciado, from Panama City, Panama, began dancing at three years old and later continued her training in Salt Lake City, Utah. She earned her B.F.A. from the Alonzo King LINES Ballet program, where she performed a diverse range of contemporary works. She remained in the Bay Area as a freelance artist before joining NW Dance Project, where she performed and taught for four years. Now back in the Bay Area, she continues working as a performer, educator, and dance maker.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="team-block">
+            <h3>Direction, Music, and Conversation</h3>
+            <div class="bios">
+              <article class="bio">
+                <h4>Jocelyn Reyes <span>(she/her)</span></h4>
+                <p>Jocelyn Reyes is a Latin American contemporary choreographer based in San Francisco. A first generation LA native, Reyes holds a B.S. in Cognitive Science and a B.A. in Dance from UCLA, and is the artistic director of REYES Dance (RD). Along with self-producing four evening length bodies of work, Reyes' choreography has been commissioned by Yerba Buena Gardens Choreofest, MERDE Project, El Saloncito and RAWdance concept series, and she has been an artist in residence with Berkeley Ballet Theater, Paul Dresher Ensemble and Zaccho Dance Theater. Most recently, Reyes was Izzie nominated for outstanding achievement in choreography/direction for the production of <em>DIOS</em> (2024) and is a current recipient of the San Francisco Arts Commission Impact Endowment Individual Artist Grant.</p>
+              </article>
+              <article class="bio">
+                <h4>One Found Sound</h4>
+                <p>One Found Sound (OFS) is a democratic orchestra focused on equitable and barrier-free music. The Bay Area's only conductorless, democratic, and musician-run orchestra, OFS's annual programs include exciting orchestral performances, educational programs for underserved youth and new music commissions focused on supporting works by diverse peoples. Their concerts are held in relaxed, unexpected venues where audiences are invited to experience the thrill of live orchestral music just as it inspires them.</p>
+              </article>
+              <article class="bio">
+                <h4>Rebecca Fitton <span>(she/they)</span></h4>
+                <p>Rebecca Fitton is a queer, mixed race asian american, disabled, and immigrant artist and arts administrator. Their writing has been published by <a href="https://dancersgroup.org/2022/01/making-public-our-private-exhaustion-gossip-and-unfinished-sentences/"><em>InDance</em></a>, <a href="https://dancercitizen.org/issue-13/rebecca-fitton/"><em>The Dancer-Citizen</em></a>, <a href="https://movementresearch.org/publications/critical-correspondence/finding-eros-by-rebecca-fitton-with-nora-alami/"><em>Critical Correspondence</em></a>, <a href="https://www.cambridge.org/core/journals/dance-research-journal/issue/E88C8A5E3A2FFF0E3D4C8A70F349C210"><em>Dance Research Journal</em></a>, and the <a href="https://static1.squarespace.com/static/6387e54c514ca62e140c90d7/t/67b4c7f94060c63c3d33a955/1739900922031/DeWhatley+and+Bonin-Rodriguez+AJAM+Teaching+Notes+2025.pdf"><em>American Journal of Arts Management</em></a>. Most recently, she has been an artist-in-residence at Winslow House Project, the Maggie Allesee National Center for Choreography and the National Center for Choreography - Akron. She holds a MA in Performance as Public Practice from the University of Texas - Austin. They serve as a Co-Director at <a href="http://bridgelivearts.org/">Bridge Live Arts</a> and <a href="http://gravity-sf.org/">GRAVITY</a>.</p>
+              </article>
+            </div>
+          </div>
+
+          <div class="team-block">
+            <h3>Production</h3>
+            <div class="bios">
+              <article class="bio">
+                <h4>Guillermo Webster <span>(he/him)</span></h4>
+                <p>Guillermo Webster is a computer guy, part-time graphic designer, and high-school-level modern dancer based in San Francisco. Webster majored in modern dance at a performing arts high school in LA, and earned a BS in Computer Science from MIT. Outside of his personal, secret artistic practice, Webster assists REYES Dance's production with a long-tail of design work and odd-jobs. Webster's favorite foods are Burrito and Pizza.</p>
+              </article>
+              <article class="placeholder">
+                <h4>Thomas Bowersox <span>(he/him)</span></h4>
+                <p>Bio forthcoming.</p>
+              </article>
+              <article class="placeholder">
+                <h4>Annie Tillis</h4>
+                <p>Bio forthcoming.</p>
+              </article>
+              <article class="placeholder">
+                <h4>Pilar Marsh</h4>
+                <p>Bio forthcoming.</p>
+              </article>
+            </div>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="section-title"><svg class="section-banana" aria-hidden="true"><use href="#banana"></use></svg><span>Dedications</span><svg class="section-banana" aria-hidden="true"><use href="#banana"></use></svg></h2>
+          <div class="dedication">
+            <p>Dedication text forthcoming.</p>
+          </div>
+        </section>
+
+        <section id="reyes">
+          <h2 class="section-title"><svg class="section-banana" aria-hidden="true"><use href="#banana"></use></svg><span>About REYES Dance</span><svg class="section-banana" aria-hidden="true"><use href="#banana"></use></svg></h2>
+          <div class="prose">
+            <p>Founded in 2017 by first-generation Latinx choreographer Jocelyn Reyes, <strong>REYES Dance</strong> is a San Francisco based dance company dedicated to performance at the intersection of horror and humor. RD's artistic productions include live dance performances and an annual dance film festival, Dance Thrill Fest. RD's choreography layers humor, everyday gestures, theatricality and storytelling onto a rigorous contemporary movement base. RD's works have investigated poverty, domestic abuse, religion, chronic illness and health within the context of Latin American culture. By presenting a sensitive but lighthearted insider perspective, RD aims to shed light on the trials and tribulations faced by many, and envision a hopeful future.</p>
+            <p>Their programming has been supported by the San Francisco Arts Commission, CASH Grant, Zellerbach Family Foundation, Kenneth Rainin Foundation, California Arts Council, and the FACT/SF co-production grant, among others. Learn more at <a href="https://reyesdance.com/">reyesdance.com</a>.</p>
+          </div>
+        </section>
+
+        <section id="odc">
+          <h2 class="section-title"><svg class="section-banana" aria-hidden="true"><use href="#banana"></use></svg><span>About ODC Theater</span><svg class="section-banana" aria-hidden="true"><use href="#banana"></use></svg></h2>
+          <div class="about-grid">
+            <div>
+              <h3>Mission and Impact</h3>
+              <p>ODC is dedicated to the lifecycle of the artistic process. Through its company, school and theater, ODC aims to inspire audiences, cultivate artists, engage community, and foster diversity and inclusion through dance.</p>
+              <p>ODC Theater exists to empower and develop innovative artists. It participates in the creation of new works through commissioning, presenting, mentorship and space access; it develops informed, engaged and committed audiences; and advocates for the performing arts as an essential component to the economic and cultural development of our community.</p>
+            </div>
+            <div>
+              <h3>The Theater</h3>
+              <p>This 170-seat venue is the site of over 150 performances a year involving nearly 1,000 local, regional, national and international artists. Since 1976, ODC Theater has been the mobilizing force behind countless San Francisco artists and a foothold for touring artists seeking a Bay Area debut.</p>
+              <p>For more information on ODC Theater and its programs, visit <a href="https://odc.dance/theater">odc.dance/theater</a>. Support ODC Theater at <a href="https://odc.dance/support-theater">odc.dance/support-theater</a>.</p>
+            </div>
+          </div>
+        </section>
+
+        <section id="connect">
+          <h2 class="section-title"><svg class="section-banana" aria-hidden="true"><use href="#banana"></use></svg><span>Connect</span><svg class="section-banana" aria-hidden="true"><use href="#banana"></use></svg></h2>
+          <div class="connect">
+            <a class="qr" href="https://www.instagram.com/jocelynmreyes_/">
+              <div>
+                <h3>Instagram</h3>
+                <p>Follow Jocelyn Reyes for REYES Dance updates and process glimpses.</p>
+              </div>
+            </a>
+            <a class="qr" href="https://reyesdance.us18.list-manage.com/subscribe?u=64588a83ecd1e9c63bac9e927&amp;id=4b76093855">
+              <div>
+                <h3>Newsletter</h3>
+                <p>Join the REYES Dance mailing list for future performances and news.</p>
+              </div>
+            </a>
+          </div>
+        </section>
+
+        <section>
+          <h2 class="section-title"><svg class="section-banana" aria-hidden="true"><use href="#banana"></use></svg><span>Supporters</span><svg class="section-banana" aria-hidden="true"><use href="#banana"></use></svg></h2>
+          <div class="prose">
+            <p><em>String Quartet No. ATE</em> is supported by the following organizations.</p>
+          </div>
+          <div class="supporters">
+            <div class="logo">
+              <img src="./assets/kenneth-rainin-foundation.png" alt="Kenneth Rainin Foundation">
+            </div>
+            <div class="logo">
+              <img src="./assets/sf-arts-commission.png" alt="San Francisco Arts Commission">
+            </div>
+            <div class="logo">
+              <img src="./assets/berkeley-ballet-theater.png" alt="Berkeley Ballet Theater">
+            </div>
+            <div class="logo">
+              <img src="./assets/merde-project.png" alt="MERDE Project">
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <span>String Quartet No. ATE</span>
+        <span>REYES Dance</span>
+      </footer>
+    </article>
+  </div>
+  <script type="text/javascript" src="../../colors.js"></script>
+</body>
+</html>
